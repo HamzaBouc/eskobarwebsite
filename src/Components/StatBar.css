@@ -1,0 +1,46 @@
+.stat-container {
+  margin-top: 20px;
+  width: 80%;
+  margin-left: 45px;
+  height: auto; /* Adjust height to accommodate label and percentage */
+  position: relative;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column; /* Stack label and bar vertically */
+}
+
+.label-and-percentage {
+  display: inline-block;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.stat-label {
+  
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+.stat-percentage {
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+.stat-bar {
+  height: 15px;
+  width: 80%;
+  border-radius: 10px;
+  background: linear-gradient(to right, #800000, black);
+  position: relative;
+}
+
+.bar-fill {
+  height: 100%;
+  border-radius: 10px;
+  background: linear-gradient(to right, #800000, #ff0000);
+  /* Modify the transition to animate the width property from 0% to currentPercentage% */
+  transition: width 0.5s ease-in-out;
+}
